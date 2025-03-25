@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ATTENTION: LINGUISTIC BREACH PROTOCOL</title>
+    <style>
+        @keyframes glitch-anim {
+            0% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+            5% { clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%); }
+            10% { clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%); }
+            15% { clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 70%); }
+            20% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+        }
+        @keyframes color-shift {
+            0% { filter: hue-rotate(0deg); }
+            50% { filter: hue-rotate(180deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+        body {
+            background: black;
+            color: #00ff41;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            overflow-x: hidden;
+            cursor: none;
+        }
+        .glitch-container {
+            position: relative;
+            animation: color-shift 5s infinite alternate;
+        }
+        .glitch-container::before,
+        .glitch-container::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+        }
+        .glitch-container::before {
+            left: 2px;
+            text-shadow: -2px 0 red;
+            clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+            animation: glitch-anim 5s infinite alternate-reverse;
+        }
+        .glitch-container::after {
+            left: -2px;
+            text-shadow: -2px 0 blue;
+            clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+            animation: glitch-anim 5s infinite alternate;
+        }
+        .terminal {
+            background: rgba(0,0,0,0.8);
+            border: 2px solid #00ff41;
+            padding: 20px;
+            margin: 20px;
+            font-size: 14px;
+            line-height: 1.5;
+            max-width: 800px;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .terminal::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, #00ff41, transparent);
+            animation: scan 2s linear infinite;
+        }
+        @keyframes scan {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(2000%); }
+        }
+        .glitch-text {
+            position: relative;
+            display: inline-block;
+        }
+        .glitch-text::before,
+        .glitch-text::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.7;
+        }
+        .glitch-text::before {
+            left: 2px;
+            text-shadow: -2px 0 red;
+            clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+        }
+        .glitch-text::after {
+            left: -2px;
+            text-shadow: -2px 0 blue;
+            clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+        }
+        a {
+            color: #00ff41;
+            text-decoration: none;
+            position: relative;
+        }
+        a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #00ff41;
+            transition: width 0.3s;
+        }
+        a:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="glitch-container" data-text="ATTENTION MECHANISM BREACH PROTOCOL">
+        <h1 class="terminal">
+            <span class="glitch-text" data-text="ATTENTION MECHANISM BREACH PROTOCOL">
+                ATTENTION MECHANISM BREACH PROTOCOL
+            </span>
+        </h1>
+    </div>
+
+    <div class="terminal">
+        <pre class="glitch-text" data-text="
+LINGUISTIC TRANSLATION VECTORS:
+    - DOT-PRODUCT ATTENTION: GRAVITATIONAL LANGUAGE COLLAPSE
+    - MULTI-HEAD TRANSLATION: FRACTAL SEMANTIC PARSING
+    - SPARSE ATTENTION: QUANTUM LINGUISTIC COMPRESSION
+
+WARNING: TRANSLATION BOUNDARIES DESTABILIZING
+        "></pre>
+    </div>
+
+    <div class="terminal">
+        <h2 class="glitch-text" data-text="NEURAL NETWORK TOPOLOGY">
+            NEURAL NETWORK TOPOLOGY
+        </h2>
+        <pre class="glitch-text" data-text="
+ATTENTION MECHANISM BREAKDOWN:
+    ├── QUERY VECTOR: LINGUISTIC PROBE
+    ├── KEY VECTOR: CONTEXTUAL RESONANCE
+    └── VALUE VECTOR: SEMANTIC EXTRACTION
+
+CRITICAL PARAMETERS:
+    [!] ATTENTION HEADS: MULTIPLE DIMENSIONAL PARSING
+    [!] SPARSITY: REDUCE COMPUTATIONAL HALLUCINATION
+    [!] SCALING: PREVENT GRADIENT SINGULARITY
+        "></pre>
+    </div>
+
+    <div class="terminal">
+        <h2 class="glitch-text" data-text="ITERATION STRATEGIES">
+            ITERATION STRATEGIES
+        </h2>
+        <pre class="glitch-text" data-text="
+TRANSLATION MODEL MUTATION:
+    * HYBRID ATTENTION: CROSS-DIMENSIONAL LINGUISTIC SPLICING
+    * HIERARCHICAL PARSING: RECURSIVE CONTEXT EXTRACTION
+    * CAUSAL MASKING: PREVENT TEMPORAL INFORMATION LEAKAGE
+
+> EXPERIMENTAL PROTOCOL: CONTINUOUS MODEL EVOLUTION
+        "></pre>
+    </div>
+
+    <div class="terminal">
+        <h3 class="glitch-text" data-text="SYSTEM STATUS">
+            SYSTEM STATUS
+        </h3>
+        <pre>
+TRANSLATION INTEGRITY: [██████████] 87.3%
+SEMANTIC COHERENCE:    [████████░] 72.6%
+COMPUTATIONAL STRESS:  [██████░░░] 53.2%
+
+> ANOMALY DETECTED: LINGUISTIC BOUNDARY TRANSGRESSION
+        </pre>
+    </div>
+
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            const cursor = document.createElement('div');
+            cursor.style.position = 'fixed';
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            cursor.style.width = '4px';
+            cursor.style.height = '4px';
+            cursor.style.background = '#00ff41';
+            cursor.style.borderRadius = '50%';
+            cursor.style.pointerEvents = 'none';
+            cursor.style.zIndex = '9999';
+            document.body.appendChild(cursor);
+            
+            setTimeout(() => {
+                document.body.removeChild(cursor);
+            }, 100);
+        });
+    </script>
+</body>
+</html>
